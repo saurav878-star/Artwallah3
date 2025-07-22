@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Reviews - ArtWallah3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Reviews</h1>
+  </header>
+
+  <main>
+    <section id="review-form">
+      <h2>Leave a Review</h2>
+      <form id="reviewForm">
+        <label>Your Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Rating (1 to 5):</label>
+        <select name="rating" required>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="1">⭐</option>
+        </select>
+
+        <label>Your Review:</label>
+        <textarea name="review" required></textarea>
+
+        <label>Upload Product Photo:</label>
+        <input type="file" name="photo" accept="image/*">
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+
+    <section id="all-reviews">
+      <h2>What Our Customers Say</h2>
+      <div id="reviews-list">
+        <!-- Reviews will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thanks for choosing ArtWallah3!</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('reviewForm');
+    const reviewsList = document.getElementById('reviews-list');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = form.name.value;
+      const rating = form.rating.value;
+      const review = form.review.value;
+      const photo = form.photo.files[0];
+
+      let reader = new FileReader();
+      reader.onload = function(e) {
+        const photoURL = e.target.result;
+        const newReview = `
+          <div class="review">
+            <h3>${name} - Rating: ${'⭐'.repeat(rating)}</h3>
+            <p>${review}</p>
+            ${photo ? <img src="${photoURL}" alt="Product Photo" style="width:150px;"> : ''}
+          </div>
+        `;
+        reviewsList.innerHTML += newReview;
+      };
+
+      if (photo) {
+        reader.readAsDataURL(photo);
+      } else {
+        const newReview = `
+          <div class="review">
+            <h3>${name} - Rating: ${'⭐'.repeat(rating)}</h3>
+            <p>${review}</p>
+          </div>
+        `;
+        reviewsList.innerHTML += newReview;
+      }
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>

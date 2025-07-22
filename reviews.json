@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Ravi Kumar",
+    "product": "Couple Sketch",
+    "rating": 5,
+    "review": "बहुत ही शानदार स्केच, बिल्कुल फोटो जैसा लगा। डिलीवरी भी समय पर हुई।",
+    "photo": "images/reviews/review1.jpg"
+  },
+  {
+    "name": "Pooja Sharma",
+    "product": "A4 Single Sketch",
+    "rating": 4,
+    "review": "क्वालिटी अच्छी है, पर फ्रेम थोड़ा और बेहतर हो सकता था।",
+    "photo": "images/reviews/review2.jpg"
+  },
+  {
+    "name": "Arjun Mehta",
+    "product": "A5 Sketch",
+    "rating": 5,
+    "review": "कीमत के हिसाब से बहुत अच्छा स्केच। Highly recommended!",
+    "photo": "images/reviews/review3.jpg"
+  },
+  {
+    "name": "Sneha Patel",
+    "product": "A3 Sketch",
+    "rating": 5,
+    "review": "Detailing जबरदस्त है, सबको gift किया और सबको पसंद आया।",
+    "photo": "images/reviews/review4.jpg"
+  },
+  {
+    "name": "Aman Yadav",
+    "product": "A1 Portrait",
+    "rating": 5,
+    "review": "Grand size और detailing बेहतरीन है। Definitely worth it!",
+    "photo": "images/reviews/review5.jpg"
+  },
+  {
+    "name": "Kavita Singh",
+    "product": "Couple Sketch",
+    "rating": 5,
+    "review": "Anniversary gift के लिए लिया था, perfect लगा। Thanks ArtWallah3!",
+    "photo": "images/reviews/review6.jpg"
+  },
+  {
+    "name": "Manish Roy",
+    "product": "A4 Single Sketch",
+    "rating": 4,
+    "review": "डिलीवरी थोड़ा लेट हुई, पर product बहुत अच्छा है।",
+    "photo": "images/reviews/review7.jpg"
+  },
+  {
+    "name": "Ritika Verma",
+    "product": "A5 Sketch",
+    "rating": 5,
+    "review": "छोटा और cute sketch, बहुत बढ़िया detailing।",
+    "photo": "images/reviews/review8.jpg"
+  },
+  {
+    "name": "Sourav Das",
+    "product": "A3 Sketch",
+    "rating": 5,
+    "review": "Quality और finishing top-notch है। Highly recommended!",
+    "photo": "images/reviews/review9.jpg"
+  },
+  {
+    "name": "Anjali Nair",
+    "product": "A1 Portrait",
+    "rating": 5,
+    "review": "Premium quality! Family photo से exact replica।",
+    "photo": "images/reviews/review10.jpg"
+  },
+  {
+    "name": "Deepak Chaurasia",
+    "product": "Couple Sketch",
+    "rating": 5,
+    "review": "Romantic gift के लिए best option, मेरी wife को बहुत पसंद आया।",
+    "photo": "images/reviews/review11.jpg"
+  },
+  {
+    "name": "Priya Iyer",
+    "product": "A4 Single Sketch",
+    "rating": 4,
+    "review": "Artwork अच्छा है, पर पैकिंग थोड़ा और अच्छा हो सकता था।",
+    "photo": "images/reviews/review12.jpg"
+  },
+  {
+    "name": "Rahul Tripathi",
+    "product": "A5 Sketch",
+    "rating": 5,
+    "review": "Budget friendly और शानदार sketch!",
+    "photo": "images/reviews/review13.jpg"
+  },
+  {
+    "name": "Neha Gupta",
+    "product": "A3 Sketch",
+    "rating": 5,
+    "review": "फ्रेम और detailing perfect, loved it.",
+    "photo": "images/reviews/review14.jpg"
+  },
+  {
+    "name": "Aditya Jain",
+    "product": "A1 Portrait",
+    "rating": 5,
+    "review": "Oversized sketch ordered किया, result beyond expectation!",
+    "photo": "images/reviews/review15.jpg"
+  }
+]
