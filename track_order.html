@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Your Order</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1 { text-align: center; }
+    #tracker { max-width: 500px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    input, button { width: 100%; padding: 10px; margin-top: 10px; }
+    #result { margin-top: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Track Your Order</h1>
+  <div id="tracker">
+    <input type="text" id="orderId" placeholder="Enter your Order ID">
+    <button onclick="trackOrder()">Track Order</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function trackOrder() {
+      const id = document.getElementById('orderId').value;
+      if (!id) {
+        document.getElementById('result').innerHTML = "Please enter a valid Order ID";
+        return;
+      }
+
+      // Dummy status – इसे बाद में real data से link करेंगे
+      const statuses = {
+        "101": "Order Confirmed",
+        "102": "Packed & Ready to Ship",
+        "103": "Out for Delivery",
+        "104": "Delivered"
+      };
+
+      document.getElementById('result').innerHTML = 
+        statuses[id] ? Status: ${statuses[id]} : "Order not found. Please check your ID.";
+    }
+  </script>
+</body>
+</html>

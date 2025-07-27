@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Your Order - ArtWallah3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Complete Your Order</h1>
+  </header>
+
+  <main>
+    <section id="order-details">
+      <h2>Delivery Details</h2>
+      <form action="status.html" method="get">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="alt-phone">Additional Phone Number:</label>
+        <input type="tel" id="alt-phone" name="alt-phone">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="village">Village/Town:</label>
+        <input type="text" id="village" name="village" required>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="pincode">PIN Code:</label>
+        <input type="text" id="pincode" name="pincode" required>
+
+        <label for="post-office">Post Office:</label>
+        <input type="text" id="post-office" name="post-office">
+
+        <button type="submit">Confirm Order</button>
+      </form>
+    </section>
+
+    <section id="payment">
+      <h2>Payment</h2>
+      <p>Scan the QR code below to make the payment.</p>
+      <img src="images/qr.jpg" alt="UPI QR Code" width="200">
+      <p>Pay via UPI: <strong>6200027761@ybl</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for shopping with ArtWallah3!</p>
+  </footer>
+</body>
+</html>
